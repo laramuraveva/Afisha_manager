@@ -79,6 +79,7 @@ public class MoviesManagerTest {
         manager.add("mov4");
         manager.add("mov5");
 
+
         String[] expected = { "mov1", "mov2", "mov3", "mov4", "mov5" };
         String[] actual = manager.findAll();
 

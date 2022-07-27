@@ -1,7 +1,7 @@
 package ru.netology.manager;
 public class MoviesManager {
 
-    public String[] movies = new String[0];
+    private String[] movies = new String[0];
     private int limit;
 
     public MoviesManager() {
@@ -30,7 +30,7 @@ public class MoviesManager {
         if (movies.length < limit){
             resultLength = movies.length;
         } else {
-            resultLength = 10;
+            resultLength = limit;
         }
 
         String[] tmp = new String[resultLength];
